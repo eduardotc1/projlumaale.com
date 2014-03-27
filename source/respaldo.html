@@ -1,0 +1,228 @@
+<!-- signin modalbox -->
+<div class="md-modal md-effect-1" id="modal-login">
+	<div class="md-content">
+		<h3>Sign in or select an option</h3>
+			<div class="box">
+				<table class="sbox">
+					<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="signintype" value="user" id="user" /></div><div class="text">Sign in to my existing account</div></td></tr>
+					<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="signintype" value="new" id="new" checked="checked" /></div><div class="text">Create a new account</div></td></tr>
+					<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="signintype" value="guest" id="guest" /></div><div class="text">Continue as a guest</div></td></tr>
+				</table>
+				<h2>Create a New Account</h2>
+				<table class="sbox">
+				<tr>
+					<td><span class="textd">Personal Title</span></td>
+					<td><span class="textd">First Name</span></td>
+				</tr>
+				<tr>
+					<td><select id="select4" name="pname">
+							<option value="">Select Title</option>
+							<option value="1">Ms.</option>
+							<option value="2">Mrs.</option>
+							<option value="3">Miss</option>
+							<option value="4">Ma'am</option>
+						</select>
+					</td>
+					<td><input type="text" name="fname" class="fieldt" value="John" /></td>
+				</tr>
+				<tr>
+					<td><span class="textd">Last Name</span></td>
+					<td><span class="textd">Email Address</span></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="lname" class="fieldt" value="Smith" /></td>
+					<td><input type="text" name="eaddr" class="fieldt" value="johnsmith@hotmail.com" /></td>
+				</tr>
+				<tr>
+					<td><span class="textd">Password</span></td>
+					<td><span class="textd">Confirm Password</span></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="pass" class="fieldt" value="********" /></td>
+					<td><input type="password" name="rpass" class="fieldt" value="********" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="radiobtn"><input class="lightblue" type="radio" name="terms" value="terms" id="terms" checked="checked" /></div><div class="terms">I have read and agree to the <a href="#">Terms of Use</a> and the <a href="#">Privacy Policy</a>.</div></td>
+				</tr>
+				</table>
+				<div class="createacc"><input class="createbtn" type="submit" name="createacc" value="Create Account" /></div>
+			<div class="clear"></div>
+			</div>	
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of signin modalbox -->
+
+<!-- viewmap1 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap1">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Arnus Hotel</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range1"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap1 modalbox -->
+
+<!-- viewmap2 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap2">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Resert Serrento Beach</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range2"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap2 modalbox -->
+
+<!-- viewmap3 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap3">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Resert Serrento Beach</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range3"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap3 modalbox -->
+
+<!-- viewmap4 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap4">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Paris</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range4"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap4 modalbox -->
+
+<!-- viewmap5 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap5">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Weekend in Aples</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range5"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap5 modalbox -->
+
+<!-- viewmap6 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap6">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Paris Tour</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range6"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap6 modalbox -->

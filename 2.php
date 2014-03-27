@@ -1,0 +1,290 @@
+
+<div id="breadcrumbs">
+	<div class="wrapbreadcrumbs">
+		<div class="text">You are on Home:&nbsp;&nbsp;/&nbsp;&nbsp;Hotels&nbsp;&nbsp;/&nbsp;&nbsp;Paris&nbsp;&nbsp;/&nbsp;&nbsp;<a href="bookdetail.html">Resert Serento Beach</a></div>
+	</div>
+</div><!-- end of breadcrumbs -->
+
+<!-- Sigin modalbox -->
+<div class="md-modal md-effect-1" id="modal-login">
+	<div class="md-content">
+		<h3>Sign in or select an option</h3>
+			<div class="box">
+				<table class="sbox">
+					<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="signintype" value="user" id="user"></div><div class="text">Sign in to my existing account</div></td></tr>
+					<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="signintype" value="new" id="new" checked></div><div class="text">Create a new account</div></td></tr>
+					<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="signintype" value="guest" id="guest"></div><div class="text">Continue as a guest</div></td></tr>
+				</table>
+				<h2>Create a New Account</h2>
+				<table class="sbox">
+				<tr>
+					<td><span class="textd">Personal Title</span></td>
+					<td><span class="textd">First Name</span></td>
+				</tr>
+				<tr>
+					<td><select id="select4" name="pname">
+							<option value="">Select Title</option>
+							<option value="1">Ms.</option>
+							<option value="2">Mrs.</option>
+							<option value="3">Miss</option>
+							<option value="4">Ma'am</option>
+						</select>
+					</td>
+					<td><input type="text" name="fname" class="fieldt" value="John" /></td>
+				</tr>
+				<tr>
+					<td><span class="textd">Last Name</span></td>
+					<td><span class="textd">Email Address</span></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="lname" class="fieldt" value="Smith" /></td>
+					<td><input type="text" name="eaddr" class="fieldt" value="johnsmith@hotmail.com" /></td>
+				</tr>
+				<tr>
+					<td><span class="textd">Password</span></td>
+					<td><span class="textd">Confirm Password</span></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="pass" class="fieldt" value="********" /></td>
+					<td><input type="password" name="rpass" class="fieldt" value="********" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="radiobtn"><input class="lightblue" type="radio" name="terms" value="terms" id="terms" checked="checked" /></div><div class="terms">I have read and agree to the <a href="#">Terms of Use</a> and the <a href="#">Privacy Policy</a>.</div></td>
+				</tr>
+				</table>
+				<div class="createacc"><input class="createbtn" type="submit" name="createacc" value="Create Account" /></div>
+			<div class="clear"></div>
+			</div>	
+	<button class="md-close closebox"></button>
+	</div>
+</div><!-- end of signin modalbox -->
+
+<!-- viewmap1 modalbox -->
+<div class="md-modal md-effect-1" id="modal-viewmap">
+	<div class="md-content">
+		<h3>View on Map</h3>
+			<div class="box">
+				<div class="map">
+					<div class="infobox">
+						<div class="midbox">
+							<h2>Cotswolds Hotels</h2>
+							<div class="address">Main Street, 658, Name Walnut Park, Paris</div>
+							<div class="phone">548-8725-524</div>
+							<div class="arrow"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<img alt="map" src="images/map.jpg" />
+				</div>
+				<div class="zmap">
+					<div class="text">Zoom In</div>
+					<div class="slide"><div id="map-range1"></div><div class="clear"></div></div>
+					<div class="reset"><a onclick="resetmap()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	<button class="md-close closebox"></button>
+	</div>
+</div>
+<!-- end of viewmap1 modalbox -->
+
+<div class="md-overlay"></div>
+
+<div id="content">
+	<div class="wrapcontent">
+		<div class="left">
+			<div class="box">
+				<div class="topbox">
+					<div class="title"><h2>SEARCH FILTER</h2></div>
+					<div class="reset"><a onclick="resetall()" href="#">Reset All</a></div>
+					<div class="clear"></div>
+				</div>
+				<div class="midbox">
+				
+					<h3>Price Range</h3>
+					<div id="price-range"></div>
+					<div class="slide-result">
+						<input disabled class="amount1" type="text" id="pr1" />
+						<input disabled class="amount2" type="text" id="pr2" value="$ 1500" />
+						<div class="clear"></div>
+					</div>
+					
+					<h3>Star Rating</h3>
+					<div id="star-range"></div>
+					<div class="slide-result">
+						<div class="rated"><div class="stars three"></div></div>
+						<input disabled class="amount2" type="text" id="sr" value="15 Ratings" />
+						<div class="clear"></div>
+					</div>
+					
+					<h3>User Rating</h3>
+					<div id="user-range"></div>
+					<div class="slide-result">
+						<div class="urated"><div class="bullets three"></div></div>
+						<input disabled class="amount2" type="text" id="ur" value="30 Users" />
+						<div class="clear"></div>
+					</div>
+					
+					<h3>Accommodation Type</h3>
+					<table class="sbox">
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="accommodation" value="1" id="ac1" checked="checked" /></div><div class="text">Apartments<span class="no">(39)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="accommodation" value="2" id="ac2" /></div><div class="text">Hotel<span class="no">(20)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="accommodation" value="3" id="ac3" /></div><div class="text">Guest House<span class="no">(56)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="accommodation" value="4" id="ac4" /></div><div class="text">Village Points<span class="no">(13)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="accommodation" value="5" id="ac5" /></div><div class="text">House<span class="no">(27)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="accommodation" value="6" id="ac6" /></div><div class="text">Motels<span class="no">(09)</span></div></td></tr>
+					</table>
+					
+					<h3 id="loct">Location</h3>
+					<table class="sbox">
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="1" id="lc1" checked="checked" /></div><div class="text">Thailand<span class="no">(15)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="2" id="lc2" /></div><div class="text">Middle East<span class="no">(20)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="3" id="lc3" /></div><div class="text">Hong Kong<span class="no">(32)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="4" id="lc4" /></div><div class="text">Chicago<span class="no">(13)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="5" id="lc5" /></div><div class="text">Las Vegas<span class="no">(05)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="6" id="lc6" /></div><div class="text">Washington<span class="no">(14)</span></div></td></tr>
+					</table>
+					<a class="moreopt" id="morelc" href="#loct">+ 5 More Options</a>
+					<div id="locmore" class="locmore">
+					<table class="sbox">
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="7" id="lc7" /></div><div class="text">Wolfsburg<span class="no">(07)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="8" id="lc8" /></div><div class="text">Dubai<span class="no">(21)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="9" id="lc9" /></div><div class="text">Barcelona<span class="no">(19)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="10" id="lc10" /></div><div class="text">London<span class="no">(08)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="location" value="11" id="lc11" /></div><div class="text">San Juan<span class="no">(03)</span></div></td></tr>
+					</table>
+					</div>
+					<a class="moreopt" id="lesslc" href="#loct">- 5 More Options</a>
+					
+					<h3>Facilities</h3>
+					<table class="sbox">
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="facilities" value="1" id="fc1" checked="checked" /></div><div class="text">Full Cooking<span class="no">(39)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="facilities" value="2" id="fc2" /></div><div class="text">Some Cooking<span class="no">(20)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="facilities" value="4" id="fc4" /></div><div class="text">Dance Club<span class="no">(13)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="facilities" value="5" id="fc5" /></div><div class="text">Swimming Pool<span class="no">(100)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="facilities" value="6" id="fc6" /></div><div class="text">Playing Areas<span class="no">(28)</span></div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="facilities" value="7" id="fc7" /></div><div class="text">Cafes<span class="no">(45)</span></div></td></tr>
+					</table>
+					
+					<h3>View Hotels on a Map</h3>
+					<table class="sbox">
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="onmap" value="1" id="mp1" checked="checked" /></div><div class="text">Show Selected Hotel</div></td></tr>
+						<tr><td><div class="radiobtn"><input class="lightblue" type="radio" name="onmap" value="2" id="mp2" /></div><div class="text">Show All Hotels</div></td></tr>
+					</table>
+					
+					<h3>Additional Search Options</h3>
+					<table class="sbox">
+						<tr><td><div class="text opt">Flight Type</div></td></tr>
+						<tr><td>
+							<select id="flight" name="flight">
+								<option value="">No Preference</option>
+								<option value="1">Belle Air</option>
+								<option value="2">B&amp;H Airlines</option>
+								<option value="3">Smart Wings</option>
+								<option value="4">Avies</option>
+								<option value="4">Travel Air</option>
+								<option value="5">Phoenix Air</option>
+							</select></td>
+						</tr>
+					</table>
+					
+					<table class="sbox">
+						<tr><td><div class="text opt">Preferred Airline</div></td></tr>
+						<tr><td>
+							<select id="airline" name="airline">
+								<option value="">No Preference</option>
+								<option value="1">Belle Air</option>
+								<option value="2">B&amp;H Airlines</option>
+								<option value="3">Smart Wings</option>
+								<option value="4">Avies</option>
+								<option value="4">Travel Air</option>
+								<option value="5">Phoenix Air</option>
+							</select></td>
+						</tr>
+					</table>
+					
+					<div class="search"><input type="submit" name="searchnow" class="searchnow" value="Search Now" /></div>
+					
+				<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="right">
+			<div class="title">
+				<h2>Resert Serento Beach</h2>
+			</div>
+			
+			<div id="gallery" class="ad-gallery">
+			<div class="special"></div>
+			  <div class="ad-image-wrapper">
+			  </div>
+				  <div class="ad-nav">
+					<div class="ad-thumbs">
+					  <ul class="ad-thumb-list">
+						<li><a href="images/679x382.gif"><img alt="Image 1" src="images/100x85.gif"></a></li>
+						<li><a href="images/679x382.gif"><img alt="Image 2" src="images/100x85.gif"></a></li>
+						<li><a href="images/679x382.gif"><img alt="Image 3" src="images/100x85.gif"></a></li>
+						<li><a href="images/679x382.gif"><img alt="Image 4" src="images/100x85.gif"></a></li>
+						<li><a href="images/679x382.gif"><img alt="Image 5" src="images/100x85.gif"></a></li>
+						<li class="last"><a href="images/679x382.gif"><img alt="Image 6" src="images/100x85.gif"></a></li>
+					  </ul>
+					</div>
+				  </div>
+			</div><!-- end of #gallery -->
+			
+			<div class="info1">
+				<div class="subtitle">Resert Serento Beach<span class="count">2 Nights</span></div>
+				<div class="social"><a href="#"><img alt="social" src="images/social.png" /></a></div>
+				<div class="clear"></div>
+				<div class="address">Address: 70 Pier Street, Perth</div>
+			</div>
+			
+			<div class="ratings">
+				<div class="uratings"><span class="text">User Rating</span><div class="bullets three"></div><span class="countrates">30 Users</span></div>
+				<div class="sratings"><div class="stars five"></div><span class="countrates">+ 10 Ratings</span> | <a href="#">Write Review</a></div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="info2">
+				<div class="left">
+					<ul>
+						<li class="room">Standard Room: <span class="color">2 Rooms With Bath</span></li>
+						<li class="people">1 - 2 People: <span class="color">$44,00</span></li>
+						<li class="wishlist"><a href="#">Add to Wishlist</a></li>
+						<li class="viewmap"><a class="md-trigger" data-modal="modal-viewmap" href="#">View on Map</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="price"><span class="price dollar">$</span>44,00</div>
+					<div class="discount">Get 10% Discount</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<form action="bookinfo.html" method="POST">
+			<div class="bottom">
+				<div class="left">
+					<div class="promotext">Enter Promotional Code: <span class="optional">(Optional)</span> <a href="#">What's this?</a></div>
+					<input class="optcode" name="optcode" />
+					<div class="clear"></div>
+				</div>
+				<div class="right">
+					<input type="submit" name="booknow" class="booknow" value="Book Now" />
+				</div>
+				<div class="clear"></div>
+			</div>
+			</form>
+			
+			<div class="desc">
+				<h2>Description</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div><!-- end of #content -->

@@ -1,0 +1,8 @@
+V1.1
+Added Popular Deals page
+Added grid view
+Fixed some CSS code
+
+V1.2
+Added Optional Booking Information Page
+Added Optional Booking Confirmation Page
